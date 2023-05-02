@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+/**shared things**/
+.card{
+    padding: 30px 80px 30px 50px;
+    height: 100%;
+}
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 93%, 0.75);
+    width: 185px;
+    line-height: 25px;
+}
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    margin: 30px 0 30px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.btn{
+    width: 140px;
+    height: 45px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border: solid 2px;
+    border-radius: 25px;
+    border-color: none;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.btn:hover{
+    border: soild 1px;
+    color: white;
+}
+/**shared things**/
+/**Section**/
+section{
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/**Section**/
+/**BiCard**/
+.bigCard{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+/**BiCard**/
+/**Orange Card**/
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.orange button{
+    color: hsl(31, 77%, 52%);
+}
+.orange button:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+/**Orange Card**/
+/**blue Card**/
+.blue{
+    background-color: hsl(184, 100%, 22%);
+}
+.blue button{
+    color: hsl(184, 100%, 22%);
+}
+.blue button:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+/**blue Card**/
+/**green Card**/
+.green{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.green button{
+    color: hsl(179, 100%, 13%);
+}
+.green button:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+/**green Card**/
+/***MEDIA***/
+@media (max-width: 925px) {
+    section{
+        height: auto;
+        padding: 30px;
+    }
+    .bigCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .orange{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+    .green{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+    }
+    .btn{
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+}
